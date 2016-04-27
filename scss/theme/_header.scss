@@ -1,0 +1,38 @@
+.header {
+	padding: 33px 0 670px 0;
+	background-image: url(../images/main_image.png);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	nav {
+		display: inline-block;
+		vertical-align: middle;
+		ul {
+			li {
+				display: inline-block;
+				font-weight: bold;
+				letter-spacing: 2px;
+				a {
+					font-size: 13px;
+					text-transform: uppercase;
+					color: #4d4959;
+					text-decoration: none;
+				}
+				a:hover {
+					color: #656076;
+					border-bottom: 2px solid #656076;
+					padding-bottom: 10px;
+				}
+				span {
+					margin:0 40px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+	h1 {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 75px;
+	}
+}

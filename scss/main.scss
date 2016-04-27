@@ -1,0 +1,399 @@
+/* INFORMATION
+	- Author:   Dean P.
+	- Contact:  deanpif@gmail.com
+*/
+
+@import 'include/_reset.scss';
+
+@import 'theme/_header.scss';
+@import 'theme/_footer.scss';
+
+body {
+	font-family: 'Lato';
+}
+
+.main {
+	&__aboutus {
+		padding: 115px 14%;
+		text-align: center;
+		background-color: #f7f7f7;
+		img {
+			margin-bottom: 35px;
+		}
+		h2 {
+			margin-bottom: 35px;
+			color: #353738;
+			font-weight: bold;
+			font-size: 18px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+		}
+		p {
+			color: #848789;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 35px;
+		}
+	}
+	&__work {
+		&__list-3 {
+			font-size: 0;
+			width: 100%;
+			&-image-small {
+				width: 33.333%;
+				display:inline-block;
+				background-image: url(../images/bike3_big.png);
+				background-position: center;
+				background-size: cover;
+				position: relative;
+				img {
+					position: absolute;
+					top: 48%;
+					left: 27%;
+				}
+			}
+			&-text {
+				width: 33.333%;
+				display:inline-block;
+				vertical-align: bottom;
+				background-color: #fff;
+				text-align: center;
+				img:first-child {
+					margin: 75px 0 32px 0;
+				}
+				hr {
+					border: 0;
+					background-color: #ddd;
+					width: 50px;
+					height: 1px;
+					display: block;
+					text-align: center;
+					margin: 30px auto 50px auto;
+				}
+				h3 {
+					margin-bottom: 35px;
+					color: #353738;
+					font-weight: bold;
+					font-size: 18px;
+					padding: 0 10%;
+					letter-spacing: 4px;
+					text-transform: uppercase;
+				}
+				p {
+					color: #848789;
+					font-size: 16px;
+					text-align: left;
+					font-weight: 300;
+					padding: 0 10%;
+					line-height: 30px;
+				}
+				img:last-child {
+					width: 100%;
+				}
+			}
+		}
+		&__list {
+			width: 100%;
+			font-size: 0;
+			&-image {
+				width: 70%;
+				display:inline-block;
+				background-image: url(../images/bike1_big.png);
+				background-position: center;
+				background-size: cover;
+				position: relative;
+				img {
+					position: absolute;
+					top: 40%;
+					left: 45%;
+				}
+			}
+			&-text {
+				width: 30%;
+				display:inline-block;
+				vertical-align: bottom;
+				background-color: #fff;
+				text-align: center;
+				img:first-child {
+					margin: 75px 0 32px 0;
+				}
+				hr {
+					border: 0;
+					background-color: #ddd;
+					width: 50px;
+					height: 1px;
+					display: block;
+					text-align: center;
+					margin: 30px auto 50px auto;
+				}
+				h3 {
+					margin-bottom: 35px;
+					color: #353738;
+					font-weight: bold;
+					font-size: 18px;
+					padding: 0 10%;
+					letter-spacing: 4px;
+					text-transform: uppercase;
+				}
+				p {
+					color: #848789;
+					font-size: 16px;
+					text-align: left;
+					font-weight: 300;
+					padding: 0 10%;
+					line-height: 30px;
+				}
+				img:last-child {
+					width: 100%;
+				}
+			}
+		}
+	}
+	&__twitter {
+		background-color: #f7f7f7;
+		padding: 125px 0 0 0;
+		text-align: center;
+		img {
+			margin-bottom: 35px;
+		}
+		h4 {
+			margin-bottom: 27px;
+			color: #353738;
+			letter-spacing: 3px;
+			font-weight: bold;
+			font-size: 18px;
+			span {
+				color: #848789;
+				font-weight: 300;
+			}
+		}
+		p {
+			font-size: 24px;
+			color: #848789;
+			padding: 0 10%;
+		}
+		> span {
+			width: 10px;
+			height: 10px;
+			display: inline-block;
+			border-radius: 100%;
+			margin: 100px 0 60px 0;
+			background-color: #f7f7f7;
+			border: 1px solid #a3a3a3;
+		}
+		> span.active {
+			background-color: #a3a3a3;
+		}
+	}
+	&__shop {
+		height: 540px;
+		font-size: 0;
+		> div {
+			width: 33.333%;
+			display: inline-block;
+		}
+		&-left {
+			div:nth-child(1), div:nth-child(2) {
+				width: 50%;
+				height: 270px;
+				display: inline-block;
+				position: relative;
+				background-size:cover;
+				background-position: center;
+				&:before {
+					content: ' ';
+					width: 100%;
+					height: 270px;
+					display: inline-block;
+				}
+				&:hover:before {
+					background-color: rgba(88, 165, 137, 0.80);
+				}
+				&:hover > img { display: block; }
+				&:hover > h3 { display: block; bottom:40%; left: 27%; }
+				img, h3 {
+					position: absolute;
+					display: none;
+					font-weight: bold;
+					color: #fff;
+					left: 37%;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					font-size: 13px;
+					bottom: 50%;
+				}
+			}
+			div:nth-child(3) {
+				width: 100%;
+				height: 270px;
+				display: inline-block;
+				background-size:cover;
+				position: relative;
+				background-position: center;
+				&:before {
+					content: ' ';
+					width: 100%;
+					height: 270px;
+					display: inline-block;
+				}
+				&:hover:before {
+					background-color: rgba(88, 165, 137, 0.80);
+				}
+				&:hover > img { display: block; }
+				&:hover > h3 { display: block; bottom:40%; left: 39%; }
+				img, h3 {
+					position: absolute;
+					display: none;
+					font-weight: bold;
+					color: #fff;
+					left: 44%;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					font-size: 13px;
+					bottom: 50%;
+				}
+			}
+		}
+		&-right {
+			div:nth-child(2), div:nth-child(3) {
+				width: 50%;
+				height: 270px;
+				display: inline-block;
+				position: relative;
+				background-size:cover;
+				background-position: center;
+				&:before {
+					content: ' ';
+					width: 100%;
+					height: 270px;
+					display: inline-block;
+				}
+				&:hover:before {
+					background-color: rgba(88, 165, 137, 0.80);
+				}
+				&:hover > img { display: block; }
+				&:hover > h3 { display: block; bottom:40%; left: 27%; }
+				img, h3 {
+					position: absolute;
+					display: none;
+					font-weight: bold;
+					color: #fff;
+					left: 37%;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					font-size: 13px;
+					bottom: 50%;
+				}
+			}
+			div:nth-child(1) {
+				width: 100%;
+				height: 270px;
+				position: relative;
+				display: inline-block;
+				background-size:cover;
+				background-position: center;
+				&:before {
+					content: ' ';
+					width: 100%;
+					height: 270px;
+					display: inline-block;
+				}
+				&:hover:before {
+					background-color: rgba(88, 165, 137, 0.80);
+				}
+				&:hover > img { display: block; }
+				&:hover > h3 { display: block; bottom:40%; left: 39%; }
+				img, h3 {
+					position: absolute;
+					display: none;
+					font-weight: bold;
+					color: #fff;
+					left: 44%;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					font-size: 13px;
+					bottom: 50%;
+				}
+			}
+		}
+		&-middle {
+			div {
+				width: 50%;
+				height: 540px;
+				display: inline-block;
+				background-size:cover;
+				position: relative;
+				background-position: center;
+				&:before {
+					content: ' ';
+					width: 100%;
+					height: 540px;
+					display: inline-block;
+				}
+				&:hover:before {
+					background-color: rgba(88, 165, 137, 0.80);
+				}
+				&:hover > img { display: block; }
+				&:hover > h3 { display: block; bottom:45%; left: 27%; }
+				img, h3 {
+					position: absolute;
+					display: none;
+					font-weight: bold;
+					color: #fff;
+					left: 37%;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					font-size: 13px;
+					bottom: 50%;
+				}
+			}
+		}
+	}
+	&__shopbutton {
+		padding: 75px 0;
+		background-color: #282f35;
+		text-align: center;
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: #fff;
+			border: 1px solid #fff;
+			letter-spacing: 3px;
+			padding: 10px 40px;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+	&__newsletter {
+		padding: 100px 0;
+		text-align: center;
+		p {
+			margin: 44px 0 32px 0;
+			color: #848789;
+			font-size: 24px;
+			font-style: italic;
+		}
+		input {
+			height: 60px;
+			padding: 0 30px;
+		}
+		input[type="email"] {
+			border: 1px solid #ddd;
+			font-family: 'Lato';
+			color: #353738;
+			width: 300px;
+		}
+		input[type="email"]::placeholder {
+			font-family: 'Lato';
+			color: #d1d1d1;
+		}
+		input[type="submit"] {
+			background-color: #64c29e;
+			font-family: 'Lato';
+			color: #fff;
+			font-size: 20px;
+			font-weight: 300;
+			vertical-align: top;
+		}
+	}
+}

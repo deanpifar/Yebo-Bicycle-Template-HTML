@@ -1,0 +1,30 @@
+.footer {
+	background-color: #f7f7f7;
+	padding: 100px 10%;
+	font-size: 0;
+	div {
+		display: inline-block;
+		width: 33.333%;
+		font-size: 14px;
+		a {
+			margin: 0 9px;
+		}
+		p, span {
+			color: #848789;
+			font-weight: 300;
+		}
+		span {
+			font-style: italic;
+		}
+		img {
+			vertical-align: middle;
+			margin-left: 15px;
+		}
+	}
+	div:nth-child(2) {
+		text-align: center;
+	}
+	div:nth-child(3) {
+		text-align: right;
+	}
+}
