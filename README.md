@@ -27,3 +27,4 @@ Developed by: [Dean Pifar](https://deanp.eu)
 * Fixed position of the bicycle logos on work section.
 * Optimized images ( Saved 4MB ).
 * Added transitions to buttons and shop part of the template.
+* Rewrote the work section of the template since it was a mess.
