@@ -62,10 +62,10 @@ textarea, input, select {
 
 .header {
   padding: 33px 0 670px 0;
+  text-align: center;
   background-image: url(../images/main_image.png);
   background-position: center;
   background-size: cover;
-  text-align: center;
 }
 
 .header nav {
@@ -357,12 +357,13 @@ body {
   font-size: 0;
 }
 
-.main__shop > div {
+.main__shop__list {
   width: 33.333%;
   display: inline-block;
+  vertical-align: top;
 }
 
-.main__shop-left div:nth-child(1), .main__shop-left div:nth-child(2) {
+.main__shop__list-small, .main__shop__list-medium, .main__shop__list-large {
   width: 50%;
   height: 270px;
   display: inline-block;
@@ -371,7 +372,7 @@ body {
   background-position: center;
 }
 
-.main__shop-left div:nth-child(1):before, .main__shop-left div:nth-child(2):before {
+.main__shop__list-small:before, .main__shop__list-medium:before, .main__shop__list-large:before {
   content: ' ';
   width: 100%;
   height: 270px;
@@ -379,21 +380,21 @@ body {
   transition: all 0.5s 0s;
 }
 
-.main__shop-left div:nth-child(1):hover:before, .main__shop-left div:nth-child(2):hover:before {
+.main__shop__list-small:hover:before, .main__shop__list-medium:hover:before, .main__shop__list-large:hover:before {
   background-color: rgba(88, 165, 137, 0.8);
 }
 
-.main__shop-left div:nth-child(1):hover > img, .main__shop-left div:nth-child(2):hover > img {
+.main__shop__list-small:hover > img, .main__shop__list-medium:hover > img, .main__shop__list-large:hover > img {
   display: block;
 }
 
-.main__shop-left div:nth-child(1):hover > h3, .main__shop-left div:nth-child(2):hover > h3 {
+.main__shop__list-small:hover > h3, .main__shop__list-medium:hover > h3, .main__shop__list-large:hover > h3 {
   display: block;
   top: 62%;
   left: 50%;
 }
 
-.main__shop-left div:nth-child(1) img, .main__shop-left div:nth-child(1) h3, .main__shop-left div:nth-child(2) img, .main__shop-left div:nth-child(2) h3 {
+.main__shop__list-small img, .main__shop__list-medium img, .main__shop__list-large img, .main__shop__list-small h3, .main__shop__list-medium h3, .main__shop__list-large h3 {
   position: absolute;
   display: none;
   font-weight: bold;
@@ -408,188 +409,21 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.main__shop-left div:nth-child(3) {
+.main__shop__list-medium {
   width: 100%;
-  height: 270px;
-  display: inline-block;
-  background-size: cover;
-  position: relative;
-  background-position: center;
 }
 
-.main__shop-left div:nth-child(3):before {
-  content: ' ';
-  width: 100%;
-  height: 270px;
-  display: inline-block;
-  transition: all 0.5s 0s;
-}
-
-.main__shop-left div:nth-child(3):hover:before {
-  background-color: rgba(88, 165, 137, 0.8);
-}
-
-.main__shop-left div:nth-child(3):hover > img {
-  display: block;
-}
-
-.main__shop-left div:nth-child(3):hover > h3 {
-  display: block;
-  top: 62%;
-  left: 50%;
-}
-
-.main__shop-left div:nth-child(3) img, .main__shop-left div:nth-child(3) h3 {
-  position: absolute;
-  display: none;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 13px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.main__shop-right div:nth-child(2), .main__shop-right div:nth-child(3) {
-  width: 50%;
-  height: 270px;
-  display: inline-block;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-}
-
-.main__shop-right div:nth-child(2):before, .main__shop-right div:nth-child(3):before {
-  content: ' ';
-  width: 100%;
-  height: 270px;
-  display: inline-block;
-  transition: all 0.5s 0s;
-}
-
-.main__shop-right div:nth-child(2):hover:before, .main__shop-right div:nth-child(3):hover:before {
-  background-color: rgba(88, 165, 137, 0.8);
-}
-
-.main__shop-right div:nth-child(2):hover > img, .main__shop-right div:nth-child(3):hover > img {
-  display: block;
-}
-
-.main__shop-right div:nth-child(2):hover > h3, .main__shop-right div:nth-child(3):hover > h3 {
-  display: block;
-  top: 62%;
-  left: 50%;
-}
-
-.main__shop-right div:nth-child(2) img, .main__shop-right div:nth-child(2) h3, .main__shop-right div:nth-child(3) img, .main__shop-right div:nth-child(3) h3 {
-  position: absolute;
-  display: none;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 13px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.main__shop-right div:nth-child(1) {
-  width: 100%;
-  height: 270px;
-  position: relative;
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
-}
-
-.main__shop-right div:nth-child(1):before {
-  content: ' ';
-  width: 100%;
-  height: 270px;
-  display: inline-block;
-  transition: all 0.5s 0s;
-}
-
-.main__shop-right div:nth-child(1):hover:before {
-  background-color: rgba(88, 165, 137, 0.8);
-}
-
-.main__shop-right div:nth-child(1):hover > img {
-  display: block;
-}
-
-.main__shop-right div:nth-child(1):hover > h3 {
-  display: block;
-  top: 62%;
-  left: 50%;
-}
-
-.main__shop-right div:nth-child(1) img, .main__shop-right div:nth-child(1) h3 {
-  position: absolute;
-  display: none;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 13px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.main__shop-middle div {
+.main__shop__list-large {
   width: 50%;
   height: 540px;
-  display: inline-block;
-  background-size: cover;
-  position: relative;
-  background-position: center;
 }
 
-.main__shop-middle div:before {
-  content: ' ';
-  width: 100%;
+.main__shop__list-large:before {
   height: 540px;
-  display: inline-block;
-  transition: all 0.5s 0s;
 }
 
-.main__shop-middle div:hover:before {
-  background-color: rgba(88, 165, 137, 0.8);
-}
-
-.main__shop-middle div:hover > img {
-  display: block;
-}
-
-.main__shop-middle div:hover > h3 {
-  display: block;
+.main__shop__list-large:hover > h3 {
   top: 56%;
-  left: 50%;
-}
-
-.main__shop-middle div img, .main__shop-middle div h3 {
-  position: absolute;
-  display: none;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 13px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .main__shopbutton {
