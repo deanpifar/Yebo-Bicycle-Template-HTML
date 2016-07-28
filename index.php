@@ -12,9 +12,6 @@
 	<!-- StyleSheets -->
 	<link rel = "stylesheet" href = "css/style.css" type = "text/css" >
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script src="js/main.js"></script>
-	
 	<!-- Favicon -->
 	<link rel = 'shortcut icon' type = 'image/x-icon' href = 'favicon.png' >
 	
@@ -123,7 +120,7 @@
 			<img src="images/logo.png" alt="">
 			<p>Stay on the saddle!</p>
 			<form action="">
-				<input type="email" placeholder="enter your email..">
+				<input type="email" placeholder="Enter your email..">
 				<input type="submit" value="GO">
 			</form>
 		</div>
