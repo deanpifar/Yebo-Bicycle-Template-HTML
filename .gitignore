@@ -1,1 +1,6 @@
 prepros.cfg
+css/include/_footer.css
+css/include/_header.css
+css/theme/_footer.css
+css/theme/_header.css
+css/main.css

@@ -299,6 +299,9 @@ body {
           animation-timing-function: ease;
 }
 
+.main {
+  overflow: hidden;
+}
 .main__aboutus {
   padding: 115px 14%;
   text-align: center;
