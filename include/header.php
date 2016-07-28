@@ -1,17 +1,17 @@
 <header class="header">
 	<nav>
 		<ul>
-			<li><a href="#">About us</a></li>
+			<li><a href="#main__aboutus">About us</a></li>
 			<li><span>.</span></li>
-			<li><a href="#">Work</a></li>
+			<li><a href="#main__work">Work</a></li>
 		</ul>
 	</nav>
 	<h1><a href="index.php"><img src="images/logo.png" alt="Logo"></a></h1>
 	<nav>
 		<ul>
-			<li><a href="#">Shop</a></li>
+			<li><a href="#main__shop">Shop</a></li>
 			<li><span>.</span></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#main__contact">Contact</a></li>
 		</ul>
 	</nav>
 </header>

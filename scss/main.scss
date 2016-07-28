@@ -12,11 +12,85 @@ body {
 	font-family: 'Lato';
 }
 
+@keyframes fromLeft {
+    from {
+		transform: translate(-200px, 0);
+		opacity: 0;
+	}
+    to {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes fromRight {
+    from {
+		transform: translate(200px, 0);
+		opacity: 0;
+	}
+    to {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes fromTop {
+    from {
+		transform: translate(0, -200px);
+		opacity: 0;
+	}
+    to {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes fromBottom {
+    from {
+		transform: translate(0, 200px);
+		opacity: 0;
+	}
+    to {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+.animate__fromright {
+	animation-name: fromRight;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+}
+
+.animate__fromleft {
+	animation-name: fromLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+}
+
+.animate__frombottom {
+	animation-name: fromBottom;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+}
+
+.animate__fromtop {
+	animation-name: fromTop;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+}
+
 .main {
 	&__aboutus {
 		padding: 115px 14%;
 		text-align: center;
+		overflow: hidden;
 		background-color: #f7f7f7;
+		& * {
+			animation-name: fromTop;
+			animation-duration: 2s;
+			animation-timing-function: ease;
+		}
 		img {
 			margin-bottom: 35px;
 		}
@@ -36,6 +110,8 @@ body {
 		}
 	}
 	&__work {
+		background: #fff;
+		overflow: hidden;
 		&__list-3 {
 			font-size: 0;
 			width: 100%;
@@ -213,11 +289,11 @@ body {
 				&:hover:before {
 					background-color: rgba(88, 165, 137, 0.80);
 				}
-				&:hover > img { display: block; }
-				&:hover > h3 { display: block; top:62%; left: 50%; }
+				&:hover > img { opacity: 1; transform: translate(-50%, -50%); }
+				&:hover > h3 { opacity: 1; transform: translate(-50%, -50%); }
 				img, h3 {
 					position: absolute;
-					display: none;
+					opacity: 0;
 					font-weight: bold;
 					color: #fff;
 					text-transform: uppercase;
@@ -225,8 +301,10 @@ body {
 					font-size: 13px;
 					top: 50%;
 					left: 50%;
-					transform: translate(-50%, -50%);
+					transition: all 0.7s 0s;
+					transform: translate(-150%, -50%);
 				}
+				h3 { top: 62%; transform: translate(50%, -50%); }
 			}
 			&-medium {
 				@extend .main__shop__list-small;
@@ -239,7 +317,7 @@ body {
 				&:before {
 					height: 540px;
 				}
-				&:hover > h3 { top: 56%; }
+				h3 { top: 56%; transform: translate(50%, -50%); }
 			}
 		}
 	}
@@ -267,6 +345,8 @@ body {
 	&__newsletter {
 		padding: 100px 0;
 		text-align: center;
+		background: #fff;
+		overflow: hidden;
 		p {
 			margin: 44px 0 32px 0;
 			color: #848789;

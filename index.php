@@ -21,13 +21,13 @@
 	
 	<?php include_once 'include/header.php'; ?>
 	<main class="main">
-		<div class="main__aboutus">
+		<div class="main__aboutus" id="main__aboutus">
 			<img src="images/aboutus_icon.png" alt="">
 			<h2>A NEW GENERATION OF VINTAGE BIKE</h2>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 		</div>
-		<div class="main__work">
-			<div class="main__work__list">
+		<div class="main__work" id="main__work">
+			<div class="main__work__list" id="worklist-1">
 				<div class="main__work__list-image">
 					<img src="images/bike1_logo.png" alt="">
 				</div>
@@ -39,7 +39,7 @@
 					<img src="images/bike1_small.png" alt="">
 				</div>
 			</div>
-			<div class="main__work__list">
+			<div class="main__work__list" id="worklist-2">
 				<div class="main__work__list-text">
 					<img src="images/bike2_icon.png" alt="">
 					<h3>La Boriosa</h3>
@@ -73,7 +73,7 @@
 			<span></span>
 			<span></span>
 		</div>
-		<div class="main__shop">
+		<div class="main__shop" id="main__shop">
 			<div class="main__shop__list">
 				<div class="main__shop__list-small" style="background-image: url(images/shop-left-1.png);">
 					<img src="images/shopnow_icon.png" alt="">
@@ -116,7 +116,7 @@
 		<div class="main__shopbutton">
 			<a href="#">Discover the Shop</a>
 		</div>
-		<div class="main__newsletter">
+		<div class="main__newsletter" id="main__contact">
 			<img src="images/logo.png" alt="">
 			<p>Stay on the saddle!</p>
 			<form action="">
@@ -126,6 +126,9 @@
 		</div>
 	</main>
 	<?php include_once 'include/footer.php'; ?>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js" async defer></script>
 	
 </body>
 
