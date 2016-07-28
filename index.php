@@ -74,40 +74,40 @@
 			<span></span>
 		</div>
 		<div class="main__shop">
-			<div class="main__shop-left">
-				<div style="background-image: url(images/shop-left-1.png);">
+			<div class="main__shop__list">
+				<div class="main__shop__list-small" style="background-image: url(images/shop-left-1.png);">
 					<img src="images/shopnow_icon.png" alt="">
 					<h3>Shop Now</h3>
 				</div>
-				<div style="background-image: url(images/shop-left-2.png);">
+				<div class="main__shop__list-small" style="background-image: url(images/shop-left-2.png);">
 					<img src="images/shopnow_icon.png" alt="">
 					<h3>Shop Now</h3>
 				</div>
-				<div style="background-image: url(images/shop-left-3.png);">
-					<img src="images/shopnow_icon.png" alt="">
-					<h3>Shop Now</h3>
-				</div>
-			</div>
-			<div class="main__shop-middle">
-				<div style="background-image: url(images/shop-middle-1.png);">
-					<img src="images/shopnow_icon.png" alt="">
-					<h3>Shop Now</h3>
-				</div>
-				<div style="background-image: url(images/shop-middle-2.png);">
+				<div class="main__shop__list-medium" style="background-image: url(images/shop-left-3.png);">
 					<img src="images/shopnow_icon.png" alt="">
 					<h3>Shop Now</h3>
 				</div>
 			</div>
-			<div class="main__shop-right">
-				<div style="background-image: url(images/shop-right-1.png);">
+			<div class="main__shop__list">
+				<div class="main__shop__list-large" style="background-image: url(images/shop-middle-1.png);">
 					<img src="images/shopnow_icon.png" alt="">
 					<h3>Shop Now</h3>
 				</div>
-				<div style="background-image: url(images/shop-right-2.png);">
+				<div class="main__shop__list-large" style="background-image: url(images/shop-middle-2.png);">
 					<img src="images/shopnow_icon.png" alt="">
 					<h3>Shop Now</h3>
 				</div>
-				<div style="background-image: url(images/shop-right-3.png);">
+			</div>
+			<div class="main__shop__list">
+				<div class="main__shop__list-medium" style="background-image: url(images/shop-right-1.png);">
+					<img src="images/shopnow_icon.png" alt="">
+					<h3>Shop Now</h3>
+				</div>
+				<div class="main__shop__list-small" style="background-image: url(images/shop-right-2.png);">
+					<img src="images/shopnow_icon.png" alt="">
+					<h3>Shop Now</h3>
+				</div>
+				<div class="main__shop__list-small" style="background-image: url(images/shop-right-3.png);">
 					<img src="images/shopnow_icon.png" alt="">
 					<h3>Shop Now</h3>
 				</div>
