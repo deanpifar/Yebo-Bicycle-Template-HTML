@@ -21,6 +21,12 @@ Developed by: [Dean Pifar](https://deanp.eu)
 
 ## Change log:
 
+### 30.07.2016
+
+* Improved the work code
+* More animations ( I might be overdoing it )
+* Cleaned up the animations from the main.scss
+
 ### 28.07.2016
 
 * Improved the code and replaced the javascript code with pure CSS solution.
