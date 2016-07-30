@@ -5,79 +5,13 @@
 
 @import 'include/_reset.scss';
 
+@import 'theme/_animations.scss';
+
 @import 'theme/_header.scss';
 @import 'theme/_footer.scss';
 
 body {
 	font-family: 'Lato';
-}
-
-@keyframes fromLeft {
-    from {
-		transform: translate(-200px, 0);
-		opacity: 0;
-	}
-    to {
-		transform: translate(0, 0);
-		opacity: 1;
-	}
-}
-
-@keyframes fromRight {
-    from {
-		transform: translate(200px, 0);
-		opacity: 0;
-	}
-    to {
-		transform: translate(0, 0);
-		opacity: 1;
-	}
-}
-
-@keyframes fromTop {
-    from {
-		transform: translate(0, -200px);
-		opacity: 0;
-	}
-    to {
-		transform: translate(0, 0);
-		opacity: 1;
-	}
-}
-
-@keyframes fromBottom {
-    from {
-		transform: translate(0, 200px);
-		opacity: 0;
-	}
-    to {
-		transform: translate(0, 0);
-		opacity: 1;
-	}
-}
-
-.animate__fromright {
-	animation-name: fromRight;
-	animation-duration: 2s;
-	animation-timing-function: ease;
-}
-
-.animate__fromleft {
-	animation-name: fromLeft;
-	animation-duration: 2s;
-	animation-timing-function: ease;
-}
-
-.animate__frombottom {
-	animation-name: fromBottom;
-	animation-duration: 2s;
-	animation-timing-function: ease;
-}
-
-.animate__fromtop {
-	animation-name: fromTop;
-	animation-duration: 2s;
-	animation-timing-function: ease;
 }
 
 .main {
@@ -92,9 +26,7 @@ body {
 			animation-duration: 2s;
 			animation-timing-function: ease;
 		}
-		img {
-			margin-bottom: 35px;
-		}
+		img { margin-bottom: 35px; }
 		h2 {
 			margin-bottom: 35px;
 			color: #353738;
@@ -113,64 +45,6 @@ body {
 	&__work {
 		background: #fff;
 		overflow: hidden;
-		&__list-3 {
-			font-size: 0;
-			width: 100%;
-			display: table;
-			&-image-small {
-				width: 33.333%;
-				display:table-cell;
-				background-image: url(../images/bike3_big.png);
-				background-position: center;
-				background-size: cover;
-				position: relative;
-				img {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-				}
-			}
-			&-text {
-				width: 33.333%;
-				display:table-cell;
-				vertical-align: bottom;
-				background-color: #fff;
-				text-align: center;
-				img:first-child {
-					margin: 75px 0 32px 0;
-				}
-				hr {
-					border: 0;
-					background-color: #ddd;
-					width: 50px;
-					height: 1px;
-					display: block;
-					text-align: center;
-					margin: 50px auto 60px auto;
-				}
-				h3 {
-					margin-bottom: 35px;
-					color: #353738;
-					font-weight: bold;
-					font-size: 18px;
-					padding: 0 10%;
-					letter-spacing: 4px;
-					text-transform: uppercase;
-				}
-				p {
-					color: #848789;
-					font-size: 16px;
-					text-align: left;
-					font-weight: 300;
-					padding: 0 10%;
-					line-height: 30px;
-				}
-				img:last-child {
-					width: 100%;
-				}
-			}
-		}
 		&__list {
 			width: 100%;
 			font-size: 0;
@@ -195,9 +69,7 @@ body {
 				vertical-align: bottom;
 				background-color: #fff;
 				text-align: center;
-				img:first-child {
-					margin: 75px 0 32px 0;
-				}
+				img:first-child { margin: 75px 0 32px 0; }
 				hr {
 					border: 0;
 					background-color: #ddd;
@@ -224,8 +96,17 @@ body {
 					padding: 0 10%;
 					line-height: 30px;
 				}
-				img:last-child {
-					width: 100%;
+				img:last-child { width: 100%; }
+			}
+			&-double {
+				@extend .main__work__list;
+				&-image {
+					@extend .main__work__list-image;
+					width: 33.333%;
+				}
+				&-text {
+					@extend .main__work__list-text;
+					width: 33.333%;
 				}
 			}
 		}
@@ -234,9 +115,7 @@ body {
 		background-color: #f7f7f7;
 		padding: 125px 0 0 0;
 		text-align: center;
-		img {
-			margin-bottom: 35px;
-		}
+		img { margin-bottom: 35px; }
 		h4 {
 			margin-bottom: 27px;
 			color: #353738;
@@ -269,6 +148,8 @@ body {
 	&__shop {
 		height: 540px;
 		font-size: 0;
+		overflow: hidden;
+		background: #fff;
 		&__list {
 			width: 33.333%;
 			display: inline-block;

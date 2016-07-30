@@ -5,9 +5,7 @@
 			<li><span>.</span></li>
 			<li><a href="#main__work">Work</a></li>
 		</ul>
-	</nav>
-	<h1><a href="index.php"><img src="images/logo.png" alt="Logo"></a></h1>
-	<nav>
+		<h1><a href="index.php"><img src="images/logo.png" alt="Logo"></a></h1>
 		<ul>
 			<li><a href="#main__shop">Shop</a></li>
 			<li><span>.</span></li>

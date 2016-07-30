@@ -60,112 +60,6 @@ textarea, input, select {
   border: 0;
 }
 
-.header {
-  padding: 33px 0 670px 0;
-  text-align: center;
-}
-.header:before {
-  content: ' ';
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  background: url(../images/main_image.png) no-repeat center center;
-  background-size: cover;
-  will-change: transform;
-  z-index: -1;
-}
-.header nav {
-  display: inline-block;
-  vertical-align: middle;
-}
-.header nav ul li {
-  display: inline-block;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-.header nav ul li a {
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #4d4959;
-  text-decoration: none;
-  transition: padding 0.5s;
-  padding: 0 10px;
-}
-.header nav ul li a:hover {
-  color: #656076;
-  border-bottom: 2px solid #656076;
-  padding-bottom: 10px;
-}
-.header nav ul li span {
-  margin: 0 40px;
-  display: inline-block;
-}
-.header nav:first-child ul {
-  -webkit-animation-name: fromLeft;
-          animation-name: fromLeft;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-.header nav:last-child ul {
-  -webkit-animation-name: fromRight;
-          animation-name: fromRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-.header h1 {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 75px;
-  -webkit-animation-name: fromTop;
-          animation-name: fromTop;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-
-.footer {
-  background-color: #f7f7f7;
-  padding: 100px 10%;
-  font-size: 0;
-}
-.footer div {
-  display: inline-block;
-  width: 33.333%;
-  font-size: 14px;
-}
-.footer div a {
-  margin: 0 9px;
-}
-.footer div p, .footer div span {
-  color: #848789;
-  font-weight: 300;
-}
-.footer div span {
-  font-style: italic;
-}
-.footer div img {
-  vertical-align: middle;
-  margin-left: 15px;
-}
-.footer div:nth-child(2) {
-  text-align: center;
-}
-.footer div:nth-child(3) {
-  text-align: right;
-}
-
-body {
-  font-family: 'Lato';
-}
-
 @-webkit-keyframes fromLeft {
   from {
     -webkit-transform: translate(-200px, 0);
@@ -299,6 +193,121 @@ body {
           animation-timing-function: ease;
 }
 
+.header {
+  padding: 33px 0 650px 0;
+  text-align: center;
+}
+.header:before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background: url(../images/main_image.png) no-repeat center center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+.header nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header nav ul {
+  display: inline-block;
+}
+.header nav ul li {
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.header nav ul li a {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #4d4959;
+  text-decoration: none;
+  transition: padding 0.5s;
+  padding: 0 10px;
+}
+.header nav ul li a:hover {
+  color: #656076;
+  border-bottom: 2px solid #656076;
+  padding-bottom: 10px;
+}
+.header nav ul li span {
+  margin: 0 40px;
+  display: inline-block;
+}
+.header nav ul:first-child {
+  -webkit-animation-name: fromLeft;
+          animation-name: fromLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.header nav ul:last-child {
+  -webkit-animation-name: fromRight;
+          animation-name: fromRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 75px;
+  -webkit-animation-name: fromTop;
+          animation-name: fromTop;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 100px 10%;
+  font-size: 0;
+  overflow: hidden;
+}
+.footer div {
+  display: inline-block;
+  width: 33.333%;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.footer div a {
+  margin: 0 9px;
+}
+.footer div p, .footer div span {
+  color: #848789;
+  font-weight: 300;
+}
+.footer div span {
+  font-style: italic;
+}
+.footer div img {
+  vertical-align: middle;
+  margin-left: 15px;
+  transition: opacity 0.5s 0s;
+}
+.footer div img:hover {
+  opacity: 0.7;
+}
+.footer__social {
+  text-align: center;
+}
+.footer__copyright {
+  text-align: right;
+}
+
+body {
+  font-family: 'Lato';
+}
+
 .main {
   overflow: hidden;
 }
@@ -337,72 +346,12 @@ body {
   background: #fff;
   overflow: hidden;
 }
-.main__work__list-3 {
-  font-size: 0;
-  width: 100%;
-  display: table;
-}
-.main__work__list-3-image-small {
-  width: 33.333%;
-  display: table-cell;
-  background-image: url(../images/bike3_big.png);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-.main__work__list-3-image-small img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.main__work__list-3-text {
-  width: 33.333%;
-  display: table-cell;
-  vertical-align: bottom;
-  background-color: #fff;
-  text-align: center;
-}
-.main__work__list-3-text img:first-child {
-  margin: 75px 0 32px 0;
-}
-.main__work__list-3-text hr {
-  border: 0;
-  background-color: #ddd;
-  width: 50px;
-  height: 1px;
-  display: block;
-  text-align: center;
-  margin: 50px auto 60px auto;
-}
-.main__work__list-3-text h3 {
-  margin-bottom: 35px;
-  color: #353738;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 0 10%;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-.main__work__list-3-text p {
-  color: #848789;
-  font-size: 16px;
-  text-align: left;
-  font-weight: 300;
-  padding: 0 10%;
-  line-height: 30px;
-}
-.main__work__list-3-text img:last-child {
-  width: 100%;
-}
-.main__work__list {
+.main__work__list, .main__work__list-double {
   width: 100%;
   font-size: 0;
   display: table;
 }
-.main__work__list-image {
+.main__work__list-image, .main__work__list-double-image {
   width: 70%;
   display: table-cell;
   background-image: url(../images/bike1_big.png);
@@ -410,7 +359,7 @@ body {
   background-size: cover;
   position: relative;
 }
-.main__work__list-image img {
+.main__work__list-image img, .main__work__list-double-image img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -418,17 +367,17 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.main__work__list-text {
+.main__work__list-text, .main__work__list-double-text {
   width: 30%;
   display: table-cell;
   vertical-align: bottom;
   background-color: #fff;
   text-align: center;
 }
-.main__work__list-text img:first-child {
+.main__work__list-text img:first-child, .main__work__list-double-text img:first-child {
   margin: 75px 0 32px 0;
 }
-.main__work__list-text hr {
+.main__work__list-text hr, .main__work__list-double-text hr {
   border: 0;
   background-color: #ddd;
   width: 50px;
@@ -437,7 +386,7 @@ body {
   text-align: center;
   margin: 50px auto 60px auto;
 }
-.main__work__list-text h3 {
+.main__work__list-text h3, .main__work__list-double-text h3 {
   margin-bottom: 35px;
   color: #353738;
   font-weight: bold;
@@ -446,7 +395,7 @@ body {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
-.main__work__list-text p {
+.main__work__list-text p, .main__work__list-double-text p {
   color: #848789;
   font-size: 16px;
   text-align: left;
@@ -454,8 +403,14 @@ body {
   padding: 0 10%;
   line-height: 30px;
 }
-.main__work__list-text img:last-child {
+.main__work__list-text img:last-child, .main__work__list-double-text img:last-child {
   width: 100%;
+}
+.main__work__list-double-image {
+  width: 33.333%;
+}
+.main__work__list-double-text {
+  width: 33.333%;
 }
 .main__twitter {
   background-color: #f7f7f7;
@@ -496,6 +451,8 @@ body {
 .main__shop {
   height: 540px;
   font-size: 0;
+  overflow: hidden;
+  background: #fff;
 }
 .main__shop__list {
   width: 33.333%;

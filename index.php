@@ -51,18 +51,18 @@
 					<img src="images/bike2_logo.png" alt="">
 				</div>
 			</div>
-			<div class="main__work__list-3">
-				<div class="main__work__list-3-image-small">
+			<div class="main__work__list-double">
+				<div class="main__work__list-double-image">
 					<img src="images/bike3_logo.png" alt="">
 				</div>
-				<div class="main__work__list-3-text">
+				<div class="main__work__list-double-text">
 					<img src="images/bike3_icon.png" alt="">
 					<h3>retrò Bike - M. Hulot</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
 					<hr>
 					<img src="images/bike2_small.png" alt="">
 				</div>
-				<div class="main__work__list-3-image-small" style="background-image: url(images/bike3_big2.png);"></div>
+				<div class="main__work__list-double-image" style="background-image: url(images/bike3_big2.png);"></div>
 			</div>
 		</div>
 		<div class="main__twitter">

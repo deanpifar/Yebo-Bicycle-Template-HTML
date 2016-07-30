@@ -29,18 +29,32 @@ $(document).on('scroll', function() {
 		$('#worklist-2 div').last().addClass('animate__fromright');
 	}
 	
-	if($(window).scrollTop() > $('.main__work__list-3').offset().top - windowHeight) {
-		$('.main__work__list-3 div').first().addClass('animate__fromleft');
-		$('.main__work__list-3 div').last().addClass('animate__fromright');
-		$('.main__work__list-3-text').addClass('animate__frombottom');
+	if($(window).scrollTop() > $('.main__work__list-double').offset().top - windowHeight) {
+		$('.main__work__list-double div').first().addClass('animate__fromleft');
+		$('.main__work__list-double div').last().addClass('animate__fromright');
+		$('.main__work__list-double-text').addClass('animate__frombottom');
 	}
 	
 	if($(window).scrollTop() > $('.main__twitter').offset().top - windowHeight) {
 		$('.main__twitter > *').addClass('animate__fromtop');
 	}
 	
+	if($(window).scrollTop() > $('.main__shop').offset().top - windowHeight) {
+		$('.main__shop__list').addClass('animate__frombottom');
+	}
+	
+	if($(window).scrollTop() > $('.main__shopbutton').offset().top - windowHeight) {
+		$('.main__shopbutton a').addClass('animate__frombottom');
+	}
+	
 	if($(window).scrollTop() > $('.main__newsletter').offset().top - windowHeight) {
 		$('.main__newsletter > *').addClass('animate__fromtop');
+	}
+	
+	if($(window).scrollTop() > $('.footer').offset().top - windowHeight) {
+		$('.footer__address').addClass('animate__fromleft');
+		$('.footer__social').addClass('animate__frombottom');
+		$('.footer__copyright').addClass('animate__fromright');
 	}
 	
 });
