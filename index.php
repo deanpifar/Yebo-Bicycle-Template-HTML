@@ -12,9 +12,6 @@
 	<!-- StyleSheets -->
 	<link rel = "stylesheet" href = "css/style.css" type = "text/css" >
 	
-	<!-- Favicon -->
-	<link rel = 'shortcut icon' type = 'image/x-icon' href = 'favicon.png' >
-	
 </head>
 
 <body>
